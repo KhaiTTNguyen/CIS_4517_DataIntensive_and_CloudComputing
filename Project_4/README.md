@@ -25,7 +25,7 @@ $ start-all.cmd
 Check datanode, namenode, resource manager and nodemanager are up and running.
 
 
-![boot_hadoop](MapReduce_Project/images/nodes.png)
+![boot_hadoop](./MapReduce_Project/images/nodes.png)
 
 Create a folder to store files & cd into fiolder with text file with words to be counted. Upload the file
 ```bash
