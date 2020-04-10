@@ -25,7 +25,7 @@ $ start-all.cmd
 Check datanode, namenode, resource manager and nodemanager are up and running.
 
 
-![boot_hadoop](MapReduce_Project\images\nodes.png)
+![boot_hadoop](MapReduce_Project/images/nodes.png)
 
 Create a folder to store files & cd into fiolder with text file with words to be counted. Upload the file
 ```bash
@@ -55,6 +55,7 @@ View number of words OR number of lines since each line is designated for 1 word
 $ find /c /v "" "<localOutputFolder>/<merged.txt>"
 ```
 A run-through example can be viewed in the **Report** folder.
+
 Windows cmds reference: https://dzone.com/articles/top-10-hadoop-shell-commands
 
 ## Contributors
