@@ -1,0 +1,68 @@
+https://dzone.com/articles/top-10-hadoop-shell-commands
+
+https://dzone.com/articles/word-count-hello-word-program-in-mapreduce?fbclid=IwAR1LKaPVkxQmOxm4Y1xpmo6FSzqH8uXgpMrG3jFC5ucPAXGcEUMDh6uD5vo
+
+
+
+
+$ Hadoop Windows cmds 
+
+// list dir contents
+hadoop fs -ls /
+hadoop fs -ls /user/saurzcode
+
+// remove dir&file 
+hadoop fs -rmr /user/saurzcode/
+hadoop fs -rm /user/saurzcode/dir1/abc.txt
+
+//cd in to folder with file
+hadoop fs -put wordcountFile.txt /testKhaiNguyen
+
+hadoop jar map_reduce.jar MapReduceWordCount.WordCount /testKhaiNguyen/wordcountFile.txt MRDir1
+
+hadoop fs -cat MRDir1/part-r-00000
+
+
+Output files located in /user/KhaiNguyen/MRDir2/
+C:\Users\KhaiNguyen\Documents\CS_4517\Project\Project_4\MapReduce_Project>hadoop fs -ls /user/KhaiNguyen/MRDir3
+Found 6 items
+-rw-r--r--   1 KhaiNguyen supergroup          0 2020-04-10 14:27 /user/KhaiNguyen/MRDir2/_SUCCESS
+-rw-r--r--   1 KhaiNguyen supergroup         12 2020-04-10 14:27 /user/KhaiNguyen/MRDir2/part-r-00000
+-rw-r--r--   1 KhaiNguyen supergroup          0 2020-04-10 14:27 /user/KhaiNguyen/MRDir2/part-r-00001
+-rw-r--r--   1 KhaiNguyen supergroup          0 2020-04-10 14:27 /user/KhaiNguyen/MRDir2/part-r-00002
+-rw-r--r--   1 KhaiNguyen supergroup          8 2020-04-10 14:27 /user/KhaiNguyen/MRDir2/part-r-00003
+-rw-r--r--   1 KhaiNguyen supergroup          0 2020-04-10 14:27 /user/KhaiNguyen/MRDir2/part-r-00004
+
+
+Download to current directory/ specified directory (have to create before downloading)
+C:\Users\KhaiNguyen\Documents\CS_4517\Project\Project_4\MapReduce_Project>hadoop fs -get /user/KhaiNguyen/MRDir3/part-r-* .
+
+>hadoop fs -cat /user/KhaiNguyen/MRDir3/part-r-* | sort > ./outputFiles/combined.txt
+
+Total num of unique terms
+Each line is a word --> countLine
+$ C:\Users\KhaiNguyen\Documents\CS_4517\Project\Project_4\MapReduce_Project>find /c /v "" "./outputFiles/combined.txt"
+
+Remove a folder
+$ hadoop fs -rm -r /user/KhaiNguyen/MRDir3
+
+
+
+Display a file 
+$ cd outputFiles
+$ more combined.txt
+$ more +6577 combined.txt
+
+
+$ Hadoop Linux cmds
+To output, have to be in the "parent" folder of the output folder
+ 
+ubuntu@ip-172-31-80-12:~$ /usr/local/hadoop/bin/hadoop jar /usr/local/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-examples-3.1.3.jar grep ~/input/ ~/grep_example 'allowed[.]*'
+
+
+
+Setup Guide
+https://www.shubhamdipt.com/blog/how-to-setup-hadoop-in-aws-ec2-instances/
+https://medium.com/@jeevananandanne/setup-4-node-hadoop-cluster-on-aws-ec2-instances-1c1eeb4453bd
+https://www.novixys.com/blog/setup-apache-hadoop-cluster-aws-ec2/
+

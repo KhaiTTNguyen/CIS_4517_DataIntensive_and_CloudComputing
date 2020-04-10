@@ -1,0 +1,13 @@
+Find default java path
+$ readlink -f /usr/bin/java | sed "s:bin/java::"
+
+
+$ /usr/lib/jvm/java-8-openjdk-amd64/jre/
+
+
+
+/usr/lib/jvm/java-8-openjdk-amd64
+
+
+/usr/local/hadoop
+
