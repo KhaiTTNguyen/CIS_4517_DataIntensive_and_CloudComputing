@@ -52,7 +52,7 @@ View number of bigrams OR number of lines since each line is designated for 1 bi
 $ find /c /v "" "<localOutputFolder>/<combined.txt>"
 ```
 
-For more visuals, a run-through example and instructions on deployment on cloud with Amazon Elastic MapReduce and S3 can be viewed in the [Report](https://github.com/KhaiTTNguyen/CIS_4517_DataIntensive_and_CloudComputing/tree/master/Project_5/Report) folder.
+For more visuals, a run-through example and instructions on deployment on cloud with Amazon Elastic MapReduce and S3 can be viewed in the [report](https://github.com/KhaiTTNguyen/CIS_4517_DataIntensive_and_CloudComputing/tree/master/Project_5/Report) folder.
 
 ### 2. Pandas Analytics
 
