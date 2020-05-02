@@ -66,3 +66,25 @@ https://www.shubhamdipt.com/blog/how-to-setup-hadoop-in-aws-ec2-instances/
 https://medium.com/@jeevananandanne/setup-4-node-hadoop-cluster-on-aws-ec2-instances-1c1eeb4453bd
 https://www.novixys.com/blog/setup-apache-hadoop-cluster-aws-ec2/
 
+
+
+
+
+
+On local, pre-create ooutput folder
+$ hadoop jar bigramCount.jar MapReduceBigramCount.BigramCount /testKhaiNguyen/Pride_and_Prejudice.txt BigramDir1 5
+
+$ hadoop fs -get /user/KhaiNguyen/BigramDir1/part-r-* .
+
+$ find /c /v "" "./output/combined.txt"
+
+Low on resources
+$ hdfs dfsadmin -safemode leave
+
+
+
+On EMR, dont pre-create ooutput folder
+MapReduceBigramCount.BigramCount 
+s3://mapreduce-nlp/Pride_and_Prejudice.txt 
+s3://mapreduce-nlp/output 
+5
