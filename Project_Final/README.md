@@ -7,7 +7,7 @@ This folder consists of a Web Scraping and PDF Scraping tool, generating csv dat
 
 # Building blocks
 * scrapeWeb.py 
-* scrapePDFtoCSV.txt
+* scrapePDFtoCSV.py
 
 Important functions in scrapePDFtoCSV.py: 
 - processBigTerritory(metric_list, file_name)
@@ -27,7 +27,7 @@ Important functions in scrapePDFtoCSV.py:
 
 
 # Testing
-* Incremental tesitng when implement new feature, no assumptions
+* Incremental testing when implement new feature, no assumptions
 
 # Installation (on Linux)
 * BeatifulSoup4

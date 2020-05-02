@@ -4,4 +4,5 @@
 * Project 2: JSON Merge
 * Project 3: Image Processing 
 * Project 4: WordCount with MapReduce and Hadoop HDFS
+* Project 5: Bigram Processing with MapReduce and Hadoop HDFS
 * Final Project: Data Wraggling (COVID_19)

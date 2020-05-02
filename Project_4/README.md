@@ -37,12 +37,12 @@ Check if file is uploaded
 $ hadoop fs -cat <storageFolderOnHDFS>/<fileName.txt>
 ```
 
-Produce & go to the folder of your .jar file to perform mapReduce
+Produce the java executable & go to the folder of your .jar file to perform mapReduce
 ```bash
 $ cd <folder with .jar file>
 $ hadoop jar <jarFileName.jar> <packageName.ClassName>  <PathToInputTextFile> <PathToOutputDirectry>
 
-To check reuslts of <storageFolderOnHDFS>, which normally has its path as /user/<username>/<PathToOutputDirectry>
+To check results of <storageFolderOnHDFS>, which normally has its path as /user/<username>/<PathToOutputDirectry>
 $ hadoop fs -ls <PathToOutputDirectry>
 ```
 
