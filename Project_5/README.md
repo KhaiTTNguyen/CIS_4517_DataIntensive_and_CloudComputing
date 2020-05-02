@@ -34,8 +34,10 @@ Produce java executable & go to the folder of your .jar file to perform mapReduc
 ```bash
 $ cd <folder with .jar file>
 $ hadoop jar <jarFileName.jar> <packageName.ClassName>  <PathToInputTextFile> <PathToOutputDirectry>
+```
 
 To check results of <storageFolderOnHDFS>, which normally has its path as /user/<username>/<PathToOutputDirectry>
+```bash
 $ hadoop fs -ls <PathToOutputDirectry>
 ```
 
